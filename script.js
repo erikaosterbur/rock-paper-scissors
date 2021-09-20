@@ -60,7 +60,7 @@ function runGame() {
     else {
         window.confirm("Choose R, P, or S")
     }
-    again = window.confirm("Wins = " + win + "\nLose = " + lose + "\nTie = " + tie + "\nDo you want to play again?");
+    again = window.confirm("Wins = " + win + "\nLosses = " + lose + "\nTies = " + tie + "\nDo you want to play again?");
 }
 
 while (again === true) {
