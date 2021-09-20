@@ -20,7 +20,6 @@ function runGame() {
         again = false;
         return;
     }
-
     console.log(oneTime);
     if (userSelection === rock && oneTime === rock) {
         tie = tie + 1;
@@ -54,9 +53,12 @@ function runGame() {
         lose = lose + 1;
          alert ("Computer chose Rock. Computer wins!");
     }
-    else {
+    else if (userSelection === scissors && oneTime === paper) {
          alert ("Computer chose Paper. You win!");
          win = win + 1;
+    }
+    else {
+        window.confirm("Choose R, P, or S")
     }
     again = window.confirm("Wins = " + win + "\nLose = " + lose + "\nTie = " + tie + "\nDo you want to play again?");
 }
